@@ -1,0 +1,5 @@
+supplychain\domain\dto\PurchaseDetailDto$PurchaseDetailDtoBuilder.class
+supplychain\domain\SupplychainDomain.class
+supplychain\domain\dto\PurchaseDetailDto.class
+supplychain\domain\dto\PurchaseDomain$PurchaseDomainBuilder.class
+supplychain\domain\dto\PurchaseDomain.class
