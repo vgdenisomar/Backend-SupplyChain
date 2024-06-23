@@ -1,5 +1,0 @@
-supplychain\command\stack\SupplyChainCommandStack.class
-supplychain\command\stack\contract\PurchaseContract.class
-supplychain\command\stack\contract\PurchaseContract$PurchaseContractBuilder.class
-.netbeans_automatic_build
-supplychain\command\stack\SupplychainCommandStackMain.class

@@ -1,7 +1,0 @@
-supplychain\repository\entity\Purchase.class
-supplychain\repository\config\SupplyChainDBConfig.class
-supplychain\repository\repository\PurchaseRepository.class
-supplychain\repository\SupplyChainRepository.class
-supplychain\repository\config\SupplyChainConnectorDB.class
-.netbeans_automatic_build
-supplychain\repository\entity\PurchaseDetail.class
