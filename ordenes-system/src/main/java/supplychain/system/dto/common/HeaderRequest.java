@@ -7,13 +7,5 @@ import lombok.Data;
  */
 @Data
 public class HeaderRequest {
-    private String code;
-    private String message;
-    private String technicalMessage;
-    private String type;
-    private String serviceId;
-    private String sessionId;
-    private String transactionDateTime;
     private String user;
-    private String channelId;
 }

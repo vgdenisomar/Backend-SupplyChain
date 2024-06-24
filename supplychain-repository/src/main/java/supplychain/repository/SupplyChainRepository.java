@@ -15,7 +15,7 @@ public class SupplyChainRepository {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SupplyChainDBConfig supplyChainDBConfig = SupplyChainDBConfig.getInstance(new SupplyChainConnectorDB("jdbc:sqlserver://localhost:1433;databaseName=SupplyChain", "sa", "123", "com.microsoft.sqlserver.jdbc.SQLServerDriver"));
+        SupplyChainDBConfig supplyChainDBConfig = SupplyChainDBConfig.getInstance(new SupplyChainConnectorDB("jdbc:sqlserver://localhost:1433;databaseName=SupplyChain", "sa", "admin@123", "com.microsoft.sqlserver.jdbc.SQLServerDriver"));
         
         ProductRepository r = new ProductRepository();
         

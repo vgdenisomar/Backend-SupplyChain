@@ -2,20 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>supplychain.system</groupId>
-    <artifactId>domain</artifactId>
+    <artifactId>service-query</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>supplychain.domain.SupplychainDomain</exec.mainClass>
+        <exec.mainClass>supplychain.service.query.SupplychainServiceQuery</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>supplychain</groupId>
-            <artifactId>system</artifactId>
-            <version>0.0.3-SNAPSHOT</version>
+            <groupId>supplychain.system</groupId>
+            <artifactId>repository</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>supplychain.system</groupId>
+            <artifactId>domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

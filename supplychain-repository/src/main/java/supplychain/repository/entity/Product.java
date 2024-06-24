@@ -25,6 +25,9 @@ public class Product extends BaseEntity implements Serializable {
     @Column(name = "ProductName", nullable = false)
     private String productName;
 
+    @Column(name = "UnitOM", nullable = false)
+    private String unitOM;
+
     @Column(name = "UnitPrice", nullable = false)
     private BigDecimal unitPrice;
 

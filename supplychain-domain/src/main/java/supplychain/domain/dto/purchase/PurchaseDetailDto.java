@@ -1,4 +1,4 @@
-package supplychain.domain.dto;
+package supplychain.domain.dto.purchase;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -25,4 +25,7 @@ public class PurchaseDetailDto {
     private String userLastModify;
     private LocalDateTime dateLastModify;
     private String registryStatus;
+
+    private String productName;
+    private BigDecimal isv;
 }

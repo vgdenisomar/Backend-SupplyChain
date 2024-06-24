@@ -9,7 +9,7 @@ import lombok.Data;
  * @param <T>
  */
 @Data
-public class RecaudosRequest<T> {
+public class SupplyChainRequest<T> {
     
     private HeaderRequest header;
     private T body;

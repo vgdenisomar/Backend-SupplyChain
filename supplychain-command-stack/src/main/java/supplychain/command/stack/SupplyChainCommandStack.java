@@ -2,7 +2,7 @@ package supplychain.command.stack;
 
 import javax.persistence.EntityManager;
 import supplychain.command.stack.contract.PurchaseContract;
-import supplychain.domain.dto.PurchaseDomain;
+import supplychain.domain.dto.purchase.PurchaseDomain;
 import supplychain.repository.config.SupplyChainDBConfig;
 
 /**
@@ -11,7 +11,7 @@ import supplychain.repository.config.SupplyChainDBConfig;
  */
 public class SupplyChainCommandStack {
 
-    public void savePurchase(PurchaseDomain purchaseDomain) {
+    public String savePurchase(PurchaseDomain purchaseDomain) {
         EntityManager entityManager = SupplyChainDBConfig.getInstance().getEntityManagerFactory().createEntityManager();
         try {
             entityManager.getTransaction().begin();
@@ -24,6 +24,8 @@ public class SupplyChainCommandStack {
             purchaseContract.save();
             
             entityManager.getTransaction().commit();
+            
+            return purchaseContract.getPurchaseNumber();
         } catch (Exception e) {
             entityManager.getTransaction().rollback();
             throw e;

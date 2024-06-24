@@ -1,4 +1,4 @@
-package supplychain.system.utils.constantes;
+package supplychain.system.utils.constant;
 
 /**
  *

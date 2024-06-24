@@ -6,9 +6,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.math.BigDecimal;
-import java.util.UUID;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Transient;
 import lombok.Data;
 import lombok.ToString;
 import org.hibernate.annotations.DynamicUpdate;
@@ -48,5 +48,10 @@ public class PurchaseDetail extends BaseEntity implements Serializable {
     @Column(name = "SubTotal", nullable = false)
     private BigDecimal subTotal;
     
+    @Transient
+    private String productName;
+    
+    @Transient
+    private BigDecimal isv;
     
 }

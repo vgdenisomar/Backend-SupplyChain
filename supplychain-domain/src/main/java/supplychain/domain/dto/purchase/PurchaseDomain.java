@@ -1,4 +1,4 @@
-package supplychain.domain.dto;
+package supplychain.domain.dto.purchase;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

@@ -1,5 +1,6 @@
 package supplychain.system.dto.response;
 
+import lombok.Builder;
 import supplychain.system.dto.common.HeaderResponse;
 import lombok.Data;
 
@@ -9,7 +10,8 @@ import lombok.Data;
  * @param <T>
  */
 @Data
-public class RecaudosResponse<T> {
+@Builder
+public class SupplyChainResponse<T> {
 
     private HeaderResponse header;
     private T body;

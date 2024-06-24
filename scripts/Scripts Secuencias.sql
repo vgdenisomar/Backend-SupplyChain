@@ -1,0 +1,23 @@
+CREATE SEQUENCE SQ_PURCHASE_NUMBER
+  START WITH 1
+  INCREMENT BY 1;
+  
+ 
+ALTER PROCEDURE SP_GET_PURCHASE_NUMBER
+  @next_value nvarchar(40) OUTPUT
+AS
+BEGIN
+  DECLARE @nextValue int;
+  DECLARE @year nvarchar(4);
+  SET @nextValue = NEXT VALUE FOR SQ_PURCHASE_NUMBER;
+  SET @year = YEAR(GETDATE());
+  SET @next_value = RIGHT('0000' + CAST(@nextValue AS nvarchar(10)), 4) + '-' + @year;
+END;
+ 
+DECLARE @next_value nvarchar(40);
+EXEC SP_GET_PURCHASE_NUMBER @next_value OUTPUT;
+SELECT @next_value;
+
+
+ALTER SEQUENCE SQ_PURCHASE_NUMBER
+RESTART WITH 1;
